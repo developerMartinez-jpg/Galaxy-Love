@@ -1,0 +1,22 @@
+{
+  "name": "love-galaxy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A private romantic galaxy: 50 planets, 50 love letters, one unlock every 24 hours.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:server": "node scripts/build.js --server",
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node scripts/build.js --server && node --disable-warning=ExperimentalWarning server/index.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
